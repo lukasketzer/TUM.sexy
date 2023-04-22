@@ -820,6 +820,8 @@ class Route {
         ],
         '2. Semester' => [
             'eist',
+	    'eistslack',
+	    'fpv',
             'gad',
             'gra',
             'linalg',
@@ -828,7 +830,6 @@ class Route {
         '3. Semester' => [
             'anal',
             'uanal',
-            'fpv',
             'db',
             'gbs',
         ],
