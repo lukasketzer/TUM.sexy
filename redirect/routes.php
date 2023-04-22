@@ -215,7 +215,11 @@ class Route {
         ],
         'eist'             => [
             'description' => 'Einführung in die Softwaretechnik',
-            'target'      => 'https://artemis.cit.tum.de/courses/169',
+            'target'      => 'https://artemis.cit.tum.de/courses/241',
+        ],
+	'eistslack'             => [
+            'description' => 'Einführung in die Softwaretechnik Slack-Channel',
+            'target'      => 'https://eist2023.slack.com/',
         ],
         'enigame'          => [
             'description' => 'enigame Puzzle Hunt (Escape Game) Event',
