@@ -4,6 +4,9 @@ services:
   tumsexy:
     image: ghcr.io/tum-dev/tum.sexy/sexy-server:latest
 
+    networks:
+      - traefik_traefik
+
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.tumsexy.entrypoints=web"
