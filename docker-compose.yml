@@ -14,6 +14,8 @@ services:
       - "traefik.http.routers.tumsexy.middlewares=webs-redirectscheme"
 
       - "traefik.http.routers.tumsexy-secure.entrypoints=webs"
+      - "traefik.http.routers.tumsexy-secure.tls.domains[0].main=tum.sexy"
+      - "traefik.http.routers.tumsexy-secure.tls.domains[0].sans=*.tum.sexy"
       - "traefik.http.routers.tumsexy-secure.tls.certresolver=sexyresolver"
       - "traefik.http.routers.tumsexy-secure.rule=Host(`tum.sexy`) || HostRegexp(`tum.sexy`, `{subdomain:[a-z0-9\\-]+}.tum.sexy`)"
       - "traefik.http.services.tumsexy-secure.loadbalancer.server.port=80"
