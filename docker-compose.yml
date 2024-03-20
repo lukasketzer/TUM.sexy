@@ -3,7 +3,7 @@ version: '3.8'
 services:
   tumsexy:
     image: ghcr.io/tum-dev/tum.sexy/sexy-server:latest
-    restart: on-failure
+    restart: unless-stopped
     networks:
       - traefik_traefik
 
