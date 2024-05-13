@@ -699,13 +699,13 @@ class Route {
             'description' => 'Prüfungsstatistiken',
             'target'      => 'https://home.stusta.de/~013107/cgi-bin/show_stat.cgi',
         ],
-        'streams'          => [
-            'description' => 'RBGreaterAgain - Bessere RBG streams',
-            'target'      => 'https://stream.tum.sexy',
-        ],
         'study'            => [
             'description' => 'Arbeitsplatz reservieren',
             'target'      => 'https://www.ub.tum.de/arbeitsplatz-reservieren',
+        ],
+        'svv'              => [
+            'description' => 'Livestream Studentische Vollversammlung',
+            'target'      => 'https://live.rbg.tum.de/?year=2024&term=S&slug=svv&view=3',
         ],
         'ted'              => [
             'description' => 'TEDxTUM Event-Seite',
