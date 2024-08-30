@@ -1,4 +1,4 @@
-FROM composer:2.5.5 as composer
+FROM composer:2.7.4 as composer
 
 WORKDIR /app
 COPY ./composer.json /app
@@ -6,10 +6,11 @@ COPY ./composer.lock /app
 
 RUN composer install --no-dev
 
-FROM php:8.2.4-apache
+FROM php:8.3.6-apache
+RUN apt update\
+ && apt install wget\
+ && rm -rf /var/lib/apt/lists/*
 RUN a2enmod rewrite
-RUN pecl install APCu-5.1.19
-RUN docker-php-ext-enable apcu
 
 WORKDIR /var/www/html/
 COPY ./ /var/www/html/
